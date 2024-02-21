@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Restoran Sitesi</title>
+    <link rel="stylesheet" href="styles/style.css"> <!--style.css içindekilerin işlemesi için bu satır mutlaka eklenmelidir-->
+  </head>
+  <body>
+        <!-- header section start -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="#menu" >Menu</a>
+            <a href="#product" >Product</a>
+            <a href="about.html" >About</a>
+            <a href="#review" >Review</a>
+            <a href="#contact" >Contact</a>
+            <a href="#blog" >Blogs</a>
+        </nav>
+        <div class="buttons">
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button id="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button id="menu-btn"> <!-- class birden fazla olabilir ama id benzeersiz olmalı-->
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="search-form">
+            <input type="text" class="search-input" id="search-box" placeholder="search here"> <!--imleç ikon üzerine gelince açılan search bar-->
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-1.png" alt="menu">
+                <div class="content">
+                    <h3>cart item 01</h3>
+                    <div class="price">$15.80/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-2.png" alt="menu">
+                <div class="content">
+                    <h3>cart item 02</h3>
+                    <div class="price">$15.80/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-3.png" alt="menu">
+                <div class="content">
+                    <h3>cart item 03</h3>
+                    <div class="price">$15.80/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-4.png" alt="menu"/>
+                <div class="content">
+                    <h3>cart item 04</h3>
+                    <div class="price">$15.80/-</div>
+                </div>
+            </div>
+            <a href="#" class="btn">checkout now</a>
+        </div>
+    </header>
+        <!-- header section end -->
+        <!-- home section start -->
+        <section class="home" id="home">
+            <div class="content">
+                <h3>EXPRESS HOME DELİVERY</h3>
+                <p>birtakım epeyce uzun açıklama amaçlı saçmalıklar.....</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </section>
+        <!-- home section end -->
+        <!-- menu section start -->
+        <section class="menu" id="menu">
+            <h1 class="heading">Our <span>Menu</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/menu-1.png" alt="menu"/>
+                        <span class="menu-category">PIZZA</span>
+                        <h3>6 Mini Pizzas</h3>
+                        <div class="price">$104.80  <span>120.0</span></div>
+                    </div>
+                    <div class="box-bottom">
+                        <a href="#" class="btn"> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/menu-2.png" alt="menu"/>
+                        <span class="menu-category">BURGER</span>
+                        <h3>5 Mini Burgers</h3>
+                        <div class="price">$99.99  <span>109.99</span></div>
+                    </div>
+                    <div class="box-bottom">
+                        <a href="#" class="btn"> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/menu-3.png" alt="menu"/>
+                        <span class="menu-category">PIZZA</span>
+                        <h3>2 Mixed Pizzas</h3>
+                        <div class="price">$50.0 <span>60.0</span></div>
+                    </div>
+                    <div class="box-bottom">
+                        <a href="#" class="btn"> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/menu-4.png" alt="menu"/>
+                        <span class="menu-category">BURGER</span>
+                        <h3>3 Meatball Burgers</h3>
+                        <div class="price">$80.80  <span>100.25</span></div>
+                    </div>
+                    <div class="box-bottom">
+                        <a href="#" class="btn"> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- menu section end -->
+        <!-- product section start -->
+        <section class="product" id="product">
+            <h1 class="heading">our <span>products</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="box-head">
+                        <span class="title"> MINI BURGER</span>
+                        <a href="#" class="name">Bacon Burger</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="price">$6.00</b>
+                            <span class="amount">110 gr / 300 Cal</span>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <span class="title"> DARK BURGER</span>
+                        <a href="#" class="name">Dark+Chese Burger</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/product-2.png" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="price">$12.00</b>
+                            <span class="amount">220 gr / 600 Cal</span>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box dark-bg">
+                    <div class="box-head">
+                        <span class="title"> DOUBLE DARK BURGER</span>
+                        <a href="#" class="name">Dark+Cheese+Double Burger</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/dark-product.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="price">$24.00</b>
+                            <span class="amount">440 gr / 1200 Cal</span>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product section end -->
+        <!-- about section start -->
+        <section class="about" id="about">
+            <h1 class="heading">about <span>us</span></h1>
+            <div class="row">
+                <div class="image">
+                    <img src="images/about.jpg" alt="about">
+                </div>
+                <div class="content">
+                    <h3>What Is The Secret Recipe Of Our Burgers?</h3>
+                    <p>Burada site veya içerikleri hakkında kısa açıklamalar vs bulunması gerekiyor</p>
+                    <p>Burada site veya içerikleri hakkında kısa açıklamalar vs bulunması gerekiyor</p>
+                    <p>Burada site veya içerikleri hakkında kısa açıklamalar vs bulunması gerekiyor</p>
+                    <a class="btn" href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <!-- about section end -->
+        <!-- review section start -->
+        <section class="review" id="review">
+            <h1 class="heading">customer's <span>review</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/quote.png" alt="quote">
+                    <p>Burada adı geçen kullanıcının (sözde) site hakkındaki yorumları ve paunlamaları! bulunmaktadır...</p>
+                    <img class="user" src="images/avatar-1.png" alt="avatar" >
+                    <h3>Jennifer Becker</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/quote.png" alt="quote">
+                    <p>Burada adı geçen kullanıcının (sözde) site hakkındaki yorumları ve paunlamaları! bulunmaktadır...</p>
+                    <img class="user" src="images/avatar-2.png" alt="avatar" >
+                    <h3>John Doe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/quote.png" alt="quote">
+                    <p>Burada adı geçen kullanıcının (sözde) site hakkındaki yorumları ve paunlamaları! bulunmaktadır...</p>
+                    <img class="user" src="images/avatar-3.png" alt="avatar" >
+                    <h3>Lisa Arambula</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- review section end -->
+        <!-- contact section start -->
+        <section class="contact" id="contact">
+            <h1 class="heading">contact <span>us</span></h1><br>
+            <div class="row">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12037.852231349814!2d28.985091699999998!3d41.03700175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7650656bd63%3A0x8ca058b28c20b6c3!2zVGFrc2ltIE1leWRhbsSxLCBHw7xtw7zFn3N1eXUsIDM0NDM1IEJleW_En2x1L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1675777745277!5m2!1str!2str"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <form>
+                    <h3>get in touch</h3>
+                    <div class="inputBox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="name">
+                    </div>
+                    <div class="inputBox">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="mail">
+                    </div>
+                    <div class="inputBox">
+                        <i class="fas fa-phone"></i>
+                        <input type="number" placeholder="phone">
+                    </div>
+                    <input type="submit" class="btn" value="contact now">
+                </form>
+            </div>
+        </section>
+        <!-- contact section end -->
+        <!-- blogs section start -->
+        <section class="blogs" id="blog">
+            <h1 class="heading">our <span>blog</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blog-1.jpg" alt="blog">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title"> how to make burgers?</a>
+                        <span>by admin/ 10st may, 2020</span>
+                        <p>
+                            Burada, sözde bloglarda bulunan bir makalenin ön gösterimi gibi birşey var
+                        </p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blog-2.jpg" alt="blog">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title"> how to make burgers?</a>
+                        <span>by admin/ 10st may, 2020</span>
+                        <p>
+                            Burada, sözde bloglarda bulunan bir makalenin ön gösterimi gibi birşey var
+                        </p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blog-3.jpg" alt="blog">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title"> how to make burgers?</a>
+                        <span>by admin/ 10st may, 2020</span>
+                        <p>
+                            Burada, sözde bloglarda bulunan bir makalenin ön gösterimi gibi birşey var
+                        </p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blogs section end -->
+        <!-- footer section start -->
+            <section class="footer">
+                <div class="search">
+                    <input type="text" class="search-input" placeholder="Search"/>
+                    <button class="btn btn-primary">search</button>
+                </div>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-github"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+                <div class="links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#" >About</a>
+                    <a href="#" >Menu</a>
+                    <a href="#" >Product</a>
+                    <a href="#" >Rewiev</a>
+                    <a href="#" >Contact</a>
+                    <a href="#" >Blogs</a>
+                </div>
+                <div class="credit">
+                    created by <span>Yunus Kaya</span> | all rigths reserved
+                </div>
+            </section>
+        <!-- footer section end -->
+        <script src="js/script.js"></script>
+  </body>
+</html>
+
+
